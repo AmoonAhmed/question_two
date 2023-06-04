@@ -9,6 +9,8 @@
 </head>
 <body>
    <h1>Sign Up Form Example</h1>
+
+   <form method="get" enctype="multipart/form-data" id="form">
    <div>
     <label>First, Last Name*:</label>
     <input type="text" required id="FN">
@@ -17,72 +19,72 @@
 
 <div>
     <label>Organization:</label>
-    <input type="text">
+    <input class="single_input" type="text">
 </div>
 
 <div>
     <label>Email address*:</label>
-    <input type="email" required>
+    <input class="single_input" type="email" required>
 </div>
 
 <div>
     <label>Work Phone:</label>
-    <input type="number">
+    <input class="single_input" type="text">
 </div>
 
 <div>
     <label>Home Phone:</label>
-    <input type="number">
+    <input class="single_input" type="text">
 </div>
 
 <div>
     <label>Cell Phone:</label>
-    <input type="number">
+    <input class="single_input" type="text">
 </div>
 
 <div>
     <label>Fax:</label>
-    <input type="number">
+    <input class="single_input" type="text">
 </div>
 
 <div>
     <label>Address 1*:</label>
-    <input type="text" required>
+    <input class="single_input" type="text" required>
 </div>
 
 <div>
     <label>Address 2:</label>
-    <input type="text">
+    <input class="single_input" type="text">
 </div>
 
 <div>
     <label>City*:</label>
-    <input type="text" required>
+    <input class="single_input" type="text" required>
 </div>
 
 <div>
     <label>State Province:</label>
-    <input type="text">
+    <input class="single_input" type="text">
 </div>
 
 <div>
     <label>Zip Postal Code:</label>
-    <input type="text">
+    <input class="single_input" type="text">
 </div>
 
 <div>
     <label>Country*:</label>
-    <input type="text" required>
+    <input class="single_input" type="text" required>
 </div>
 
  
 <div id="submit">
 
     <label>* required fields</label>
-<input id="button" type="submit">
+<button type="button" id="submit" onclick="displayMessage()">Submit
 <!-- <a href="">form:</a> -->
 </div>
-
+</form>
 <script src="form.js"></script>
 </body>
 </html>
